@@ -15,15 +15,15 @@
     }
 
     body {
-        background: linear-gradient(135deg, #ff9ecf, #ffc3e6, #ffe6f7);
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        text-align: center;
-        color: #fff;
-    }
+    background: linear-gradient(135deg, #ff9ecf, #ffc3e6, #ffe6f7);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow-x: hidden;   /* hanya sembunyikan scroll samping */
+}
 
     .container {
     display: flex;
@@ -208,13 +208,10 @@
     </div>
     <div class="heart mt-70">❤️</div>
     <br><br>
-    <button>Peluk Virtual 🤗</button>
+    <button onclick="document.getElementById('musik').play()">
+    Klik Sini Sayang 💖
+    </button>
     </div>
-
-
-<div class="footer">
-    Dibuat dengan penuh cinta 💖
-</div>
 </div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
