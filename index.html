@@ -182,9 +182,6 @@
 <body>
 
     <div class="container">
-        <audio id="musik" loop>
-            <source src="audio/mariah carey.mp3" type="audio/mpeg">
-        </audio>
     <div class="card">
     <h1>Happy Birthday 🎂</h1>
     <h2>Untuk Wanita Hebat yang Aku Sayang 💕</h2>
@@ -208,9 +205,24 @@
     </div>
     <div class="heart mt-70">❤️</div>
     <br><br>
-    <button onclick="document.getElementById('musik').play()">
-    Klik Sini Sayang 💖
-    </button>
+    <button id="bukaKado">Klik Disini Sayang ❤️</button>
+
+<audio id="musik" loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    const btn = document.getElementById('bukaKado');
+    const musik = document.getElementById('musik');
+
+    btn.addEventListener('click', () => {
+        musik.play().catch(err => {
+            alert("Safari memblokir audio, coba tap lagi!");
+            console.log(err);
+        });
+        btn.style.display = 'none'; // sembunyikan tombol setelah play
+    });
+</script>
     </div>
 </div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
