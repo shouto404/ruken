@@ -3,10 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <title>Happy Birthday My Love 💖</title>
 
 <style>
+     :root {
+    --bluesoft: #F9FBFC;
+    --blue: #3A38FF;
+    --navy: #101041;
+    --softpurple: #E5E4FF;
+    --grey: #DFE2E7;
+    --darkgrey: #949293;
+    --darkgrey2: #E7EBED;
+    --purple: #6261D8;
+    --green: #316762;
+    --white: #FFFFFF;
+    --fwbold: 800;
+    --fwextrabold: 900;
+    --fwsemibold: 600;
+    --fwmedium: 500;
+    --fwregular: 400;
+    --fwlight: 300;
+
+ }
+
     * {
         margin: 0;
         padding: 0;
@@ -14,7 +37,7 @@
         font-family: 'Poppins', sans-serif;
     }
 
-    body {
+body {
     background: linear-gradient(135deg, #ff9ecf, #ffc3e6, #ffe6f7);
     min-height: 100vh;
     display: flex;
@@ -25,7 +48,24 @@
     overflow-x: hidden;   /* hanya sembunyikan scroll samping */
 }
 
-    .container {
+.big-header {
+    font-weight: var(--fwextrabold);
+    color: var(--navy);
+    font-size: 30px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.primary-copy {
+    font-weight: var(--fwregular);
+    color: var(--darkgrey);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    margin: 0;
+ }
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,10 +175,13 @@
 
    @keyframes slide {
     0% { transform: translateX(0); }
-    25% { transform: translateX(-220px); }
-    50% { transform: translateX(-440px); }
-    75% { transform: translateX(-660px); }
+    16% { transform: translateX(-250px); }
+    32% { transform: translateX(-500px); }
+    48% { transform: translateX(-750px); }
+    64% { transform: translateX(-1000px); }
+    80% { transform: translateX(-1250px); }
     100% { transform: translateX(0); }
+
 }
 
 /* RESPONSIVE */
@@ -158,8 +201,8 @@
 
 .slides {
     display: flex;
-    width: 400%;
-    animation: slide 12s infinite linear;
+    width: 600%;
+    animation: slide 17s infinite linear;
 }
 
 .slides img {
@@ -183,14 +226,14 @@
 
     <div class="container">
     <div class="card">
-    <h1>Happy Birthday 🎂</h1>
+    <h1 class="big-header">Happy Birthday 🎂</h1>
     <h2>Untuk Wanita Hebat yang Aku Sayang 💕</h2>
-    <p>
+    <p class="primary-copy">
         Di hari spesial ini, aku ingin kamu tahu bahwa kamu adalah alasan
         senyumku setiap hari. Terima kasih sudah hadir dalam hidupku
         dan membuat semuanya terasa lebih indah.
-    </p>
-    <p>
+    </p><br>
+    <p class="primary-copy">
         Semoga semua mimpi dan harapanmu terkabul.
         Aku akan selalu ada untukmu, hari ini, besok, dan selamanya.
     </p>
